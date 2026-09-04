@@ -1,0 +1,155 @@
+:root {
+    --wmr-accent: #9E8612;
+    --wmr-bg: #ffffff;
+    --wmr-border: #e2e8f0;
+    --wmr-text-main: #1e293b;
+    --wmr-text-muted: #64748b;
+}
+
+.wmr-container {
+    background-color: var(--wmr-bg) !important;
+    color: var(--wmr-text-main) !important;
+    padding: 24px;
+    border-radius: 12px;
+    max-width: 850px;
+    margin: 20px auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    border: 1px solid var(--wmr-border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.wmr-field-group {
+    margin-bottom: 20px;
+}
+
+.wmr-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: var(--wmr-text-main);
+}
+
+/* Tooltip / Point d'interrogation */
+.wmr-tooltip-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    background-color: #cbd5e1;
+    color: #0f172a;
+    border-radius: 50%;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: help;
+    position: relative;
+}
+
+.wmr-tooltip-icon:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: normal;
+    white-space: normal;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 99;
+}
+
+.wmr-select, .wmr-textarea {
+    width: 100%;
+    background: #f8fafc;
+    color: var(--wmr-text-main);
+    border: 1px solid var(--wmr-border);
+    border-radius: 8px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.wmr-slider {
+    width: 100%;
+    accent-color: var(--wmr-accent);
+}
+
+.wmr-slider-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--wmr-text-muted);
+    margin-top: 4px;
+}
+
+.wmr-slider-labels span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.wmr-counter {
+    font-size: 0.8rem;
+    color: var(--wmr-text-muted);
+    margin-top: 4px;
+    text-align: right;
+}
+
+/* Bouton CTA #9E8612 avec texte foncé */
+.wmr-button, .wmr-btn-accent {
+    background-color: var(--wmr-accent) !important;
+    color: #1e293b !important;
+    font-weight: 700 !important;
+    border: none !important;
+    padding: 12px 20px !important;
+    border-radius: 8px !important;
+    cursor: pointer;
+    width: 100%;
+    transition: opacity 0.2s ease;
+}
+
+.wmr-button:hover {
+    opacity: 0.9;
+}
+
+.wmr-score-bar-bg {
+    background: #e2e8f0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 6px;
+}
+
+.wmr-score-bar-fill {
+    background-color: var(--wmr-accent);
+    height: 100%;
+    transition: width 0.5s ease;
+}
+
+.wmr-diff-content {
+    background: #f8fafc;
+    color: var(--wmr-text-main);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--wmr-border);
+    white-space: pre-wrap;
+    font-size: 0.9rem;
+}
+
+.wmr-diff-del {
+    background-color: #fee2e2;
+    color: #991b1b;
+    text-decoration: line-through;
+}
+
+.wmr-diff-ins {
+    background-color: #dcfce7;
+    color: #166534;
+}
