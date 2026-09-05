@@ -28,4 +28,5 @@ This tool was designed to alter the statistical signatures of AI-generated text 
 
 📄 License & Terms
 
-All Rights Reserved. Access to this source code is provided solely for educational review and technical inspection. Redistribution, standalone installation on third-party WordPress sites, or commercial exploitation without prior written consent is strictly prohibited (see the [`LICENSE`](./LICENSE) file).
+All Rights Reserved. Access to this source code is provided solely for educational review and technical inspection. Redistribution, standalone installation on third-party WordPress sites, or commercial exploitation without prior written consent is strictly prohibited.
+
